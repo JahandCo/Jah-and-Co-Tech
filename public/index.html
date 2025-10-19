@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jah and Co Tech | Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-charcoal text-text-light font-sans antialiased">
+
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="sticky top-0 z-50 bg-charcoal/50 backdrop-blur-lg border-b border-card-border">
+        <nav class="container mx-auto flex justify-between items-center p-4 text-lg">
+            <div>
+                 <div class="text-2xl font-bold text-neon-cyan neon-glow-text">Jah and Co</div>
+                 <div class="text-sm text-muted">Tech | Dev</div>
+            </div>
+            <div class="flex items-center space-x-8 font-bold">
+                <a href="https://pulseapp.jahandco.tech" target="_blank" class="hover:text-neon-cyan transition-colors">Pulse App</a>
+                <a href="#contact" class="hover:text-neon-cyan transition-colors">Contact</a>
+                <a href="https://neocity.jahandco.tech" target="_blank" class="neon-button !py-2 !px-6 !text-base">Enter Neocity</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 flex-grow">
+
+        <section id="about" class="min-h-[70vh] flex items-center justify-center text-center py-20 fade-in">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 neon-glow-purple">Jah and Co Tech</h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-neon-cyan mb-8 neon-glow-text">Development Hub</h2>
+                <p class="text-xl max-w-3xl mx-auto text-muted">
+                    Your all-in-one platform for private and public tools, from email to chat, blogging, and workflow automation. Designed to be sleek, modern, and tech-forward.
+                </p>
+            </div>
+        </section>
+
+        <section id="development" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-12 neon-glow-text fade-in">Development Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="card p-8 flex flex-col fade-in" style="animation-delay: 100ms;">
+                    <h3 class="text-2xl font-bold text-neon-purple mb-2 neon-glow-purple">FEATURED APPLICATION</h3>
+                    <h2 class="text-4xl font-bold text-neon-cyan mb-4 neon-glow-text">Pulse</h2>
+                    <p class="text-muted text-lg mb-6 flex-grow">
+                        Our premier social platform. Connect, share, and discover in a universe built for modern interaction.
+                    </p>
+                    <a href="https://pulseapp.jahandco.tech" target="_blank" class="neon-button text-center">
+                        Visit Pulse
+                    </a>
+                </div>
+
+                <div class="card p-8 flex flex-col fade-in" style="animation-delay: 200ms;">
+                    <h3 class="text-2xl font-bold text-neon-purple mb-2 neon-glow-purple">IN DEVELOPMENT</h3>
+                    <h2 class="text-4xl font-bold text-neon-cyan mb-4 neon-glow-text">Project: Neocity</h2>
+                    <p class="text-muted text-lg mb-6 flex-grow">
+                        A cybertech-inspired multiverse social platform. Explore character designs and track our progress.
+                    </p>
+                    <a href="https://neocity.jahandco.tech" target="_blank" class="neon-button text-center">
+                        View Dev Log
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer id="contact" class="mt-12 border-t border-card-border bg-charcoal/70">
+        <div class="container mx-auto p-8 text-center text-muted">
+            <h3 class="text-3xl font-bold text-text-light mb-4 neon-glow-text">Contact & Support</h3>
+            <p class="text-lg">For support, please email: <a href="mailto:support@jahandco.tech" class="text-neon-cyan hover:underline">support@jahandco.tech</a></p>
+            <p class="text-lg">For general inquiries: <a href="mailto:info@jahandco.tech" class="text-neon-cyan hover:underline">info@jahandco.tech</a></p>
+            <p class="mt-8">&copy; 2025 Jah and Co Tech | Dev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles-connect.js"></script>
+</body>
+</html>
