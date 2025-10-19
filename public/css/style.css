@@ -1,5 +1,4 @@
-
-      body {
+body {
         background-color: var(--main-bg);
         color: var(--text-light);
         overflow-x: hidden;
@@ -21,6 +20,10 @@
         text-shadow: 0 0 5px var(--neon-purple), 0 0 10px var(--neon-purple), 0 0 15px var(--neon-purple);
         animation: pulse-glow-purple 2s ease-in-out infinite;
       }
+      .idle-glow {
+        animation: pulse-glow 3s ease-in-out infinite;
+      }
+
       @keyframes pulse-glow {
         0%, 100% { text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 15px var(--neon-cyan); }
         50% { text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan), 0 0 30px var(--neon-cyan), 0 0 40px var(--neon-cyan); }
@@ -56,6 +59,7 @@
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        animation: float 6s ease-in-out infinite;
       }
       .card::before {
         content: '';
@@ -116,3 +120,34 @@
       ::-webkit-scrollbar-track { background: var(--dark-navy); }
       ::-webkit-scrollbar-thumb { background: var(--neon-purple); border-radius: 4px; }
       ::-webkit-scrollbar-thumb:hover { background: var(--neon-cyan); }
+
+      @keyframes subtle-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+
+      .subtle-pulse {
+        animation: subtle-pulse 4s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      .float-effect {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes aurora-border {
+        0% { border-image-source: linear-gradient(to right, var(--neon-cyan), var(--neon-purple)); }
+        25% { border-image-source: linear-gradient(to bottom, var(--neon-cyan), var(--neon-purple)); }
+        50% { border-image-source: linear-gradient(to left, var(--neon-cyan), var(--neon-purple)); }
+        75% { border-image-source: linear-gradient(to top, var(--neon-cyan), var(--neon-purple)); }
+        100% { border-image-source: linear-gradient(to right, var(--neon-cyan), var(--neon-purple)); }
+      }
+
+      .aurora-border {
+        border-image-slice: 1;
+        animation: aurora-border 5s linear infinite;
+      }
